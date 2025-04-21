@@ -1,6 +1,6 @@
 //func get API
 async function getSurahList() {
-    const url = 'http://api.alquran.cloud/v1/surah';
+    const url = 'https://api.alquran.cloud/v1/surah';
     try {
         const response = await fetch(url);
         const data = await response.json();
