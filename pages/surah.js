@@ -12,15 +12,11 @@ async function getSurahPage(number) {
     }
 }
 
-function setSurahPageTemplate(text, audio) {
+function setSurahPageTemplate(number, text) {
     return `
-        <div class="p-6 bg-white text-gray-800 rounded-lg shadow-md text-center 
-        border-b border-gray-400 font-sans">
-        ${text}
-        <audio controls>
-        <source src="${audio}" type="audio/mpeg">
-        Your browser does not support the audio element.
-        </audio>
+        <div class="px-4 py-4 my-2 bg-white text-gray-800 shadow text-right text-3xl font-serif">
+            <div class="float-left w-12 h-8 text-center text-lg border-b border-gray-300 rounded-full font-sans block-inline">${number}.</div>
+            <div>${text}</div>
         </div>
         `
 }
@@ -75,7 +71,7 @@ async function renderSurahPage(surahNumber) {
         let ayahArr = [];
         let audioArr = [];
         for (let i = 0; i < ayahs.length; i++) {
-            ayahArr.push(setSurahPageTemplate(ayahs[i].text, ayahs[i].audio))
+            ayahArr.push(setSurahPageTemplate(ayahs[i].numberInSurah, ayahs[i].text))
             audioArr.push(new Audio(ayahs[i].audio));
         }
 
