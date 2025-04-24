@@ -86,9 +86,5 @@ async function renderSurahPage(surahNumber) {
 
 
 let surahNumber = location.search.split('number=')[1]
-const menu = document.getElementById('menu-button');
-menu.onclick = function () {
-    window.location.href = '../index.html';
-}
 console.log(location.search.split('number='));
 renderSurahPage(surahNumber);
