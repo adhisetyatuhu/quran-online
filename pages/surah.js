@@ -14,7 +14,7 @@ async function getSurahPage(number) {
 
 function setSurahPageTemplate(number, text) {
     return `
-        <div class="px-4 py-4 my-2 bg-white text-gray-800 shadow text-right text-3xl font-serif">
+        <div class="px-4 py-4 my-2 bg-white text-gray-800 shadow text-right text-3xl font-[Al-Mushaf]">
             <div class="float-left w-12 h-8 text-center text-lg border-b border-gray-300 rounded-full font-sans block-inline">${number}.</div>
             <div>${text}</div>
         </div>

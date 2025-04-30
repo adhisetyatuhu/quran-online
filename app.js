@@ -19,7 +19,7 @@ function setSurahTemplate(number, arabicName, englishName, translation) {
     return `
     <div class="py-4 px-4 pb-4 pt-4 border-b border-gray-400 hover:bg-sky-100">
        <a href="pages/surah.html?number=${number}" class="text-lg">
-        <div class="flex gap-4">
+        <div class="flex gap-4 font-[Al-Mushaf]">
             <span class="">${number}.</span> ${arabicName} 
         </div>
         <div class="flex gap-4 text-sm text-gray-500">
