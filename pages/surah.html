@@ -10,18 +10,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="container mx-auto p">
+    <div class="container mx-auto pb-20">
         <h1 id="surah-title" class="text-3xl font-bold py-6 text-center">Surah Name</h1>
-        <div class="absolute top-5">
-            <button id="menu-button" class="bg-blue-500 text-white px-4 py-2 rounded hover:cursor-pointer hover:bg-blue-600/90 active:bg-blue-500 active:cursor-default"><i class="fa-solid fa-list"></i></button>
-            <button id="play-button" class="bg-blue-500 text-white px-4 py-2 rounded hover:cursor-pointer hover:bg-blue-600/90 active:bg-blue-500 active:cursor-default">
-                <i class="fa-solid fa-play"></i> <i class="fa-solid fa-pause"></i>
-            </button>
-            
-            <button id="stop-button" class="bg-blue-500 text-white px-4 py-2 rounded hover:cursor-pointer hover:bg-blue-600/90 active:bg-blue-500 active:cursor-default"><i class="fa-solid fa-stop"></i></button>
-        </div>
-    
+        
         <div id="page"></div>
+
+        <div class="bg-white py-2 fixed bottom-0 left-0 right-0">
+            <div class="flex justify-center items-center gap-2">
+                <button id="menu-button" class="bg-blue-500 text-white px-4 py-2 rounded hover:cursor-pointer hover:bg-blue-600/90 active:bg-blue-500 active:cursor-default"><i class="fa-solid fa-list"></i></button>
+                <button id="play-button" class="bg-blue-500 text-white px-4 py-2 rounded hover:cursor-pointer hover:bg-blue-600/90 active:bg-blue-500 active:cursor-default">
+                    <i class="fa-solid fa-play"></i> <i class="fa-solid fa-pause"></i>
+                </button>
+                
+                <button id="stop-button" class="bg-blue-500 text-white px-4 py-2 rounded hover:cursor-pointer hover:bg-blue-600/90 active:bg-blue-500 active:cursor-default"><i class="fa-solid fa-stop"></i></button>
+            </div>
+        </div>
     </div>
     
     <script src="surah.js"></script>
